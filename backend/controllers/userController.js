@@ -1,6 +1,6 @@
 const axios = require('axios');
 const admin = require('../config/firebaseConfig');
-const API_KEY = '7afa46f2e91768e7eeeb9001ce40de19';
+const API_KEY = PROCESS_ENV_API;
 
 exports.createUser = async (req, res) => {
   const { name, zipcode } = req.body;
